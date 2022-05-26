@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import "./App.css";
 import { Link } from "react-router-dom";
 import Searchbar from "./SearchBar";
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import ShoppingBagIcon from "@mui/icons-material/ShoppingBag";
 
 class Nav extends Component {
   state = {};
@@ -20,12 +22,12 @@ class Nav extends Component {
           </li>
           <Link to="/shoppingcart">
             <li>
-              <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png"></img>
+              <ShoppingBagIcon />
             </li>
           </Link>
           <Link to="/myaccount">
             <li>
-              <img src="https://static.vecteezy.com/system/resources/thumbnails/002/318/271/small/user-profile-icon-free-vector.jpg"></img>
+              <AccountCircleIcon />
             </li>
           </Link>
         </ul>
